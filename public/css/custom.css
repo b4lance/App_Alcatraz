@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow: auto;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+}
+
+
+header .section--banner .section--banner--logo1 img{
+    width: 240px;
+    height: 100px;
+}
+
+header .section--banner .section--banner--logo2 img{
+    width: 240px;
+    height: 100px;
+}
+
+
+footer{
+    background: #4f9421;
+    padding: 20px;
+}
+
+.icon-better{
+    padding: 10px;
+    align-items: center;
+    font-size: 1.3em;
+    width: 35px;
+    height: 35px;
+    background: white;
+    border-radius: 50%;
+}
+
+.navbar{
+    background: #4f9421;
+}
+
+.navbar-nav .nav-item .nav-link{
+    color: aliceblue;
+}
+
+.login{
+    margin-left: 600px;
+}
+
+form a{
+    color: aliceblue;
+}
+
+form a:hover{
+    color: #fff;
+}
+
+.dropdown-menu{
+    background: #4f9421;
+}
+
+.dropdown-menu a{
+    color: aliceblue;
+}
+
+.buscar-cedula{
+    margin: auto;
+    text-align: center;
+}
+
+.content-margin{
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+
+h1 a{
+    text-decoration: none;
+    color: black;
+}
+
+h1 a:hover{
+    text-decoration: none;
+    color: #4f9421;
+}
+
+
+@media screen and (max-width:992px){
+    .login{
+        margin-left: 0;
+    }
+}
+
+   
+
+
+
+
