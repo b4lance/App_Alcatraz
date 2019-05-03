@@ -3,14 +3,20 @@
 @section('contenido')
     <section class="row d-flex justify-content-center">
 		 <div class="col-md-6 col-sm-12 content-margin">
-		 	<form method="GET" action="{{ route('') }}">
+		 	<form method="GET" action="{{ route('buscar_cedula') }}">
             @csrf 
            <div class="form-group text-center mt-4">
                <label for="email">Ingrese cedula de la persona que desea pertenecer al proyecto:</label>
-               <input id="username" type="text" class="buscar-cedula col-sm-6 form-control{{ $errors->has('username') ? ' is-invalid' : '' }}" name="username" value="{{ old('username') }}" required autofocus>
-                @if ($errors->has('username'))
+               <div class="input-group my-group">
+                <select id="lunch" class="form-control" style="width: 15%;" name="nacionalidad">
+                   <option value="V">V</option>
+                   <option value="E">E</option>
+               </select> 
+                <input id="cedula" type="text" style="width:85%;" class="buscar-cedula form-control{{ $errors->has('cedula') ? ' is-invalid' : '' }}" name="cedula" value="{{ old('cedula') }}"  autofocus>
+               </div> 
+                @if ($errors->has('cedula'))
                        <span class="invalid-feedback" role="alert">
-                           <strong>{{ $errors->first('username') }}</strong>
+                           <strong>{{ $errors->first('cedula') }}</strong>
                        </span>
                  @endif
            </div>

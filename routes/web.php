@@ -13,9 +13,7 @@ Route::get('contacto','Web\InicioController@contacto')->name('contacto');
 
 Route::get('solicitud-cita','Web\InicioController@terminos')->name('terminos');
 
-Route::post('/solicitud-cita/buscar-cedula','Web\InicioController@buscarCedula')->name('buscar_cedula');
-
-Route::post('/solicitud-cita/buscar-cedula','Web\InicioController@busqueda')->name('buscar_cedula');
+Route::get('/solicitud-cita/buscar-cedula','Web\InicioController@buscarCedula')->name('buscar_cedula');
 
 
 //Inicio de Sesión

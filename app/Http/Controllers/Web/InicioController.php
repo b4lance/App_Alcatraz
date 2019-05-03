@@ -32,15 +32,16 @@ class InicioController extends Controller
     }
 
     public function buscarCedula(Request $request){
-        $messages=[
-            'terminos.required'=>'Para continuar es necesario aceptar los términos y condiciones.'
-        ];
-
         $this->validate($request,[
-            'terminos'=>'required'
-        ],$messages);
+            'nacionalidad'=>'required',
+            'cedula'=>'required|numeric'
+        ]);
 
-        return view('web.buscar_cedula');
+        if($request->cedula){
+            return 'ok';
+        }else{
+            return view('web.buscar_cedula');
+        }
     }
 
     /*public function prueba(){
